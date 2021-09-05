@@ -73,23 +73,23 @@ body {
 
 .title {
   font-size: 13px;
-  color: white;
+  color: #fff;
   direction: rtl;
   text-align: center;
 }
 
 .title-btn {
   background-color: #0101aa;
-  color: white;
+  color: #fff;
   height: 30px;
   font-family: "myfont";
   font-size: 13px;
   cursor: pointer;
   outline: none;
-  border: none;
   padding: 5px 10px;
   position: absolute;
   bottom: 30px;
+  border: none;
 }
 
 .input {
@@ -113,11 +113,11 @@ body {
   background-color: #4444ff;
   font-family: "myfont";
   font-size: 12px;
-  border: none;
   outline: none;
   cursor: pointer;
   margin-top: 5px;
   padding: 0px 10px;
+  border: none;
 }
 
 a {
@@ -183,7 +183,7 @@ hr {
 }
 
 .card-link {
-  color: gray;
+  colo: .card-link gray;
   margin-right: 10px;
 }
 

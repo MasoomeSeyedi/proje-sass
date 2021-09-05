@@ -1,4 +1,26 @@
+
 @charset "UTF-8";
+
+$bgheader:#5b5bff;
+$bgheader-form:#f0f0f0;
+$white:#fff;
+$title-btn:#0101aa;
+$form-btn:#4444ff;
+$form-btn-a:#2E2DEE;
+$black:#000;
+$card-color:rgba(211, 211, 211, 0.5);
+$blue:blue;
+$gray:gray;
+$lgray:lightgray;
+$w100:100%;
+@mixin border {
+  border: 1px solid $lgray;
+} 
+@mixin border-btn-none
+{
+  border: none;
+}
+
 @font-face {
   font-family: "myfont";
   src: url("../fonts/FontsFree-Net-ir_sans.ttf") format("truetype");
@@ -32,7 +54,7 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: $w100;
   display: flex;
   justify-content: start;
   /*left directon*/
@@ -40,7 +62,7 @@ body {
 }
 
 .contact {
-  width: 100%;
+  width: $w100;
   height: 220px;
   display: flex;
   flex-direction: row;
@@ -50,7 +72,7 @@ body {
 
 .div-title {
   width: 70%;
-  background-color: #5b5bff;
+  background-color: $bgheader;
   height: 220px;
   display: flex;
   flex-direction: column;
@@ -64,7 +86,7 @@ body {
 
 .div-form {
   width: 30%;
-  background-color: #f0f0f0;
+  background-color: $bgheader-form;
   height: 220px;
   display: flex;
   flex-direction: column;
@@ -73,23 +95,24 @@ body {
 
 .title {
   font-size: 13px;
-  color: white;
+  color: $white;
   direction: rtl;
   text-align: center;
 }
 
 .title-btn {
-  background-color: #0101aa;
-  color: white;
+  background-color: $title-btn;
+  color:$white;
   height: 30px;
   font-family: "myfont";
   font-size: 13px;
   cursor: pointer;
   outline: none;
-  border: none;
+ 
   padding: 5px 10px;
   position: absolute;
   bottom: 30px;
+  @include border-btn-none()
 }
 
 .input {
@@ -97,7 +120,7 @@ body {
   /*top-bottom     right-left*/
   width: 90%;
   height: 35px;
-  border: 1px solid lightgray;
+ @include border;
 }
 
 .input::placeholder {
@@ -113,11 +136,12 @@ body {
   background-color: #4444ff;
   font-family: "myfont";
   font-size: 12px;
-  border: none;
+ 
   outline: none;
   cursor: pointer;
   margin-top: 5px;
   padding: 0px 10px;
+  @include border-btn-none()
 }
 
 a {
@@ -125,14 +149,14 @@ a {
 }
 
 .remember {
-  color: #2E2DEE;
+  color: $form-btn-a;
   font-size: 12px;
   /*text-decoration: none;*/
   margin-top: 30px;
 }
 
 .weblog-title {
-  width: 100%;
+  width:$w100;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -141,20 +165,20 @@ a {
 }
 
 hr {
-  color: #000;
-  width: 100%;
+  color:$black;
+  width: $w100;
 }
 
 .weblog-title p {
   padding: 0 10px;
   font-size: 13px;
-  color: blue;
+  color:$blue;
   text-align: center;
   width: 300px;
 }
 
 .div-box {
-  width: 100%;
+  width: $w100;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -168,7 +192,7 @@ hr {
   width: 300px;
   height: 180px;
   direction: rtl;
-  background-color: rgba(211, 211, 211, 0.5);
+  background-color: $card-color;
   padding: 10px;
   margin: 1px;
 }
@@ -178,12 +202,12 @@ hr {
   padding: 0 3px;
   /* top-bottom   right-left*/
   font-size: 12px;
-  color: blue;
+  color:$blue;
   margin: 10px;
 }
 
 .card-link {
-  color: gray;
+  colo:&gray;
   margin-right: 10px;
 }
 
@@ -193,7 +217,7 @@ hr {
 }
 
 .footer {
-  width: 100%;
+  width:$w100;
 }
 
 .footer ul {
@@ -219,7 +243,7 @@ hr {
   }
   .div-title,
   .div-form {
-    width: 100%;
+    width: $w100;
   }
   .div-title {
     padding: 70px;
