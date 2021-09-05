@@ -1,0 +1,29 @@
+@media screen and (max-width: 900px) {
+    .contact {
+      /*کمتر از 900 پیکسل*/
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      align-items: center;
+    }
+    .div-title,
+    .div-form {
+      width: $w100;
+    }
+    .div-title {
+      padding: 70px;
+    }
+    .header img {
+      display: none;
+    }
+    .weblog-title {
+      margin-top: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 1230px) {
+    .footer {
+      display: none;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
